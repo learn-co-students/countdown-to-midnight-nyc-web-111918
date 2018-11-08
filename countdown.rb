@@ -1,9 +1,16 @@
 #write your code here
-$cd = 0;
 def countdown(time)
-  $cd = time
-  begin 
+  while time > 0
     puts "#{time} SECOND(S)!"
-    $cd -= 1
-  end while $cd > 0
+    time-=1
+  end
+  "HAPPY NEW YEAR!"
+end
+
+def countdown_with_sleep(time)
+  while sleep(time) > 0
+  puts "#{time} SECOND(S)!"
+  time-=1
+  end
+  "HAPPY NEW YEAR!"
 end
